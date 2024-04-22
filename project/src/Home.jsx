@@ -10,45 +10,45 @@ function Home() {
 
     const data = [
         {
-          name: 'Page A',
-          uv: 4000,
-          pv: 2400,
+          name: 'Lundi',
+          Employés: 4000,
+          Clients: 2400,
           amt: 2400,
         },
         {
-          name: 'Page B',
-          uv: 3000,
-          pv: 1398,
+          name: 'Mardi',
+          Employés: 3000,
+          Clients: 1398,
           amt: 2210,
         },
         {
-          name: 'Page C',
-          uv: 2000,
-          pv: 9800,
+          name: 'Mercredi',
+          Employés: 2000,
+          Clients: 9800,
           amt: 2290,
         },
         {
-          name: 'Page D',
-          uv: 2780,
-          pv: 3908,
+          name: 'Jeudi',
+          Employés: 2780,
+          Clients: 3908,
           amt: 2000,
         },
         {
-          name: 'Page E',
-          uv: 1890,
-          pv: 4800,
+          name: 'Vendredi',
+          Employés: 1890,
+          Clients: 4800,
           amt: 2181,
         },
         {
-          name: 'Page F',
-          uv: 2390,
-          pv: 3800,
+          name: 'Samedi',
+          Employés: 2390,
+          Clients: 3800,
           amt: 2500,
         },
         {
-          name: 'Page G',
-          uv: 3490,
-          pv: 4300,
+          name: 'Dimanche',
+          Employés: 3490,
+          Clients: 4300,
           amt: 2100,
         },
       ];
@@ -66,7 +66,7 @@ function Home() {
                     <h3>ENTREPRISES</h3>
                     <BsFillArchiveFill className='card_icon'/>
                 </div>
-                <h1>20</h1>
+                <h1>10</h1>
             </div>
             <div className='card'>
                 <div className='card-inner'>
@@ -80,14 +80,14 @@ function Home() {
                     <h3>ENTREPRISE FRANÇAISE</h3>
                     <BsPeopleFill className='card_icon'/>
                 </div>
-                <h1>33</h1>
+                <h1>7</h1>
             </div>
             <div className='card'>
                 <div className='card-inner'>
                     <h3>ENTREPRISE ÉTRANGÈRES</h3>
                     <BsFillBellFill className='card_icon'/>
                 </div>
-                <h1>42</h1>
+                <h1>3</h1>
             </div>
         </div>
 
@@ -109,8 +109,8 @@ function Home() {
                 <YAxis />
                 <Tooltip />
                 <Legend />
-                <Bar dataKey="pv" fill="#8884d8" />
-                <Bar dataKey="uv" fill="#82ca9d" />
+                <Bar dataKey="Clients" fill="#8884d8" />
+                <Bar dataKey="Employés" fill="#82ca9d" />
                 </BarChart>
             </ResponsiveContainer>
 
@@ -131,8 +131,8 @@ function Home() {
                 <YAxis />
                 <Tooltip />
                 <Legend />
-                <Line type="monotone" dataKey="pv" stroke="#8884d8" activeDot={{ r: 8 }} />
-                <Line type="monotone" dataKey="uv" stroke="#82ca9d" />
+                <Line type="monotone" dataKey="Clients" stroke="#8884d8" activeDot={{ r: 8 }} />
+                <Line type="monotone" dataKey="Employés" stroke="#82ca9d" />
                 </LineChart>
             </ResponsiveContainer>
 
